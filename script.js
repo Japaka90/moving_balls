@@ -10,7 +10,6 @@
       }
       
       var stopBallMove = function() {
-//          $(this).appendTo( '.left_box' );
           console.log("back")
       }
       
