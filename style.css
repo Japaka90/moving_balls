@@ -1,0 +1,64 @@
+body {
+    background-color: darkblue;
+}
+
+.container {
+    width: 1100px;
+    height: 600px;
+/*    background-color: darkblue;*/
+    margin: auto;
+    margin-top: 5%;
+}
+
+.left_box,
+.right_box {
+    width: 45%;
+    height: 80%;
+    display: inline-block;
+    background-color: white;
+    margin: 2%;
+    position: relative
+}
+
+.right_box {
+    position: relative;
+    z-index: 1;
+}
+
+#ball_1 {
+    left: 120px;
+    top: 10px;
+}
+
+#ball_2 {
+    left: 60px;
+    top: 140px;
+}
+
+#ball_3 {
+    left: 185px;
+    top: 90px;
+}
+
+
+.ball,
+.moving_ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, red, darkred);
+    box-shadow: -5px -8px 8px rgba(0, 0, 0, 0.5) inset;
+    z-index: 2; 
+    position: absolute;
+}
+
+.moving_ball {
+    background: radial-gradient(circle at 35% 30%, blue, darkblue);
+    position: absolute;
+}
+
+
+#coords {
+    color: white;
+    font-size: 30px;
+}
